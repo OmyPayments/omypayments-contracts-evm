@@ -5,6 +5,10 @@ require('dotenv').config();
 
 import './tasks/accounts_task';
 import './tasks/payout_deploy_task';
+import './tasks/payout_addsender_task';
+import './tasks/payout_removesender_task';
+import './tasks/payout_addtoken_task';
+import './tasks/payout_removetoken_task';
 
 const config = {
   solidity: {
