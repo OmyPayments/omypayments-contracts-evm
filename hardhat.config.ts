@@ -4,6 +4,7 @@ import "@openzeppelin/hardhat-upgrades";
 require('dotenv').config();
 
 import './tasks/accounts_task';
+import './tasks/payout_deploy_task';
 
 const config = {
   solidity: {
