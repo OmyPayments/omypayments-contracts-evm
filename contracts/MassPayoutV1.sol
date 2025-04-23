@@ -18,7 +18,6 @@ contract MassPayoutV1 is UUPSUpgradeable, ReentrancyGuardUpgradeable, BaseWithdr
 
     event AddTokenEvent(address _tokenAddress);
     event RemoveTokenEvent(address _tokenAddress);
-    event MakePayoutEvent(address _token, address _tokenAddress, uint _amount);
     event MetaPayoutsEvent(uint _totalAmount, uint _targetsCount, bytes32 _key);
 
     struct Token {
@@ -94,14 +93,12 @@ contract MassPayoutV1 is UUPSUpgradeable, ReentrancyGuardUpgradeable, BaseWithdr
         );
         _token.safeTransferFrom(msg.sender, address(this), totalAmount);
 
-        //TODO: fix this
         payouts[_key].exists = true;
         payouts[_key].totalAmount = totalAmount;
         payouts[_key].targetsCount = _targets.length;
 
         for (uint i = 0; i < _targets.length; i++) {
             _token.safeTransfer(_targets[i], _amounts[i]);
-            emit MakePayoutEvent(address(_token), _targets[i], _amounts[i]);
         }
 
         emit MetaPayoutsEvent(totalAmount, _targets.length, _key);
