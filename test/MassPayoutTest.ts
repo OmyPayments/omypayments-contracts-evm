@@ -115,4 +115,32 @@ describe("MassPayout test", function () {
             .to.be.revertedWithCustomError(payout, 'CustomError')
             .withArgs(1206);
     });
+
+    it("Highload tests", async function() {
+        const { Token, token, Payout, payout, owner, user1, user2, zeroAddress } = await loadFixture(deployContractsFixture);
+        const key = hexlify(randomBytes(32));
+
+        let targets: any[] = [];
+        let amounts: any[] = [];
+        let totalAmount = 0n;
+        for (let i = 0; i < 50; i++) {
+            targets.push(user1.address);
+            amounts.push(1000n);
+            targets.push(user2.address);
+            amounts.push(2000n);
+
+            totalAmount += (1000n + 2000n);
+        }
+
+        console.log([
+            targets,
+            amounts,
+            totalAmount,
+        ]);
+
+        await expect(payout.connect(owner).addToken(await token.getAddress())).to.not.rejected;
+        await expect(token.connect(owner).approve(await payout.getAddress(), totalAmount)).to.not.rejected;
+        await expect(payout.connect(owner).metaPayouts(token, targets, amounts, key))
+            .to.emit(payout, 'MetaPayoutsEvent')
+    });
 });

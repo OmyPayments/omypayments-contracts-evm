@@ -9,6 +9,7 @@ import './tasks/payout_addsender_task';
 import './tasks/payout_removesender_task';
 import './tasks/payout_addtoken_task';
 import './tasks/payout_removetoken_task';
+import './tasks/token_deploy_task';
 
 const config = {
   solidity: {
