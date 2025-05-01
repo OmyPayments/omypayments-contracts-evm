@@ -21,15 +21,29 @@ abstract contract BaseWithdrawal is Ownable2StepUpgradeable {
     /// @param _tokenAddress address  Transfer token address (address(0) - native coins)
     event TransferEvent(address _to, uint _amount, address _tokenAddress);
 
-    /// Return coni balance
+    /// Return coin balance
     /// @return uint
     function getBalance() public view returns(uint) {
+        return _getBalancePrivate();
+    }
+
+    /// Return coin balance private function
+    /// @return uint
+    function _getBalancePrivate() internal view returns(uint) {
         return address(this).balance;
     }
 
     /// Return token balance
+    /// @param _token IERC20
     /// @return uint
     function getTokenBalance(IERC20 _token) public view returns(uint) {
+        return _getTokenBalancePrivate(_token);
+    }
+
+    /// Return token balance private function
+    /// @param _token IERC20
+    /// @return uint
+    function _getTokenBalancePrivate(IERC20 _token) internal view returns(uint) {
         return _token.balanceOf(address(this));
     }
 
