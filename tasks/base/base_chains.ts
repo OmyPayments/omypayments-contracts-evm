@@ -7,8 +7,11 @@ export const Chains = {
             networkName: "ethereumMainnet",
             contractAddresses: {
                 massPayout: {
-                    address: '0x0000000000000000000000000000000000000000',
-                    tokensList: [],
+                    address: '0x32E9d24C9358712a5f4ee36477A9eF503926260f',
+                    tokensList: [
+                        '0xdAC17F958D2ee523a2206206994597C13D831ec7', // USDT
+                        '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', // USDC
+                    ],
                 },
             },
         },
@@ -18,8 +21,11 @@ export const Chains = {
             networkName: "polygonMainnet",
             contractAddresses: {
                 massPayout: {
-                    address: '0x0000000000000000000000000000000000000000',
-                    tokensList: [],
+                    address: '0x385EfC63fF7c59A9B3fc59B5DE23DF95e30806Fb',
+                    tokensList: [
+                        '0xc2132D05D31c914a87C6611C10748AEb04B58e8F', // USDT
+                        '0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359', // USDC
+                    ],
                 },
             },
         },
@@ -29,8 +35,11 @@ export const Chains = {
             networkName: "bscMainnet",
             contractAddresses: {
                 massPayout: {
-                    address: '0x0000000000000000000000000000000000000000',
-                    tokensList: [],
+                    address: '0x8749530D8B6720Bc0E690D65F651208Fcf69C45D',
+                    tokensList: [
+                        '0x55d398326f99059fF775485246999027B3197955', // USDT
+                        '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', // USDC
+                    ],
                 },
             },
         },
@@ -350,6 +359,20 @@ export const Chains = {
                 massPayout: {
                     address: '0x0000000000000000000000000000000000000000',
                     tokensList: [],
+                },
+            },
+        },
+        {
+            id: 'xxx',
+            title: "TRON", // Tron
+            networkName: "tronMainnet",
+            contractAddresses: {
+                massPayout: {
+                    address: 'TEjJKkQZytGVvMn4VnabdZH73rk3BwMzf7',
+                    tokensList: [
+                        'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t', // USDT
+                        'TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8', // USDC
+                    ],
                 },
             },
         },

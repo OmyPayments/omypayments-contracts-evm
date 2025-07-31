@@ -41,7 +41,7 @@ const config = {
     },
     ethereumMainnet: {
       url: process.env.NETWORK_HOST_ETHEREUM,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 1
     },
     ethereumGoerli: {
@@ -56,7 +56,7 @@ const config = {
     },
     polygonMainnet: {
       url: process.env.NETWORK_HOST_POLYGON,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 137
     },
     polygonMumbai: {
@@ -66,7 +66,8 @@ const config = {
     },
     bscMainnet: {
       url: process.env.NETWORK_HOST_BSC,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
+      // accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
       chainId: 56
     },
     bscTestnet: {
@@ -76,150 +77,150 @@ const config = {
     },
     avalancheMainnet: {
       url: process.env.NETWORK_HOST_AVALANCHE,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 43114
       // https://subnets.avax.network/c/c-chain-mainnet/rpc
     },
     optimismMainnet: {
       url: process.env.NETWORK_HOST_OPTIMISM,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 10
     },
     arbitrumMainnet: {
       url: process.env.NETWORK_HOST_ARBITRUM,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 42161
     },
     operaMainnet: {
       url: process.env.NETWORK_HOST_FANTOM,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 250
     },
     moonbeamMainnet: {
       url: process.env.NETWORK_HOST_MOON,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 1284
     },
     celoMainnet: {
       url: process.env.NETWORK_HOST_CELO,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 42220
     },
     aurora: {
       url: process.env.NETWORK_HOST_AURORA,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 1313161554
     },
     boba: {
       url: process.env.NETWORK_HOST_BOBA,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 288
     },
     gnosis: {
       url: process.env.NETWORK_HOST_GNOSIS,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 100
     },
     telosMainnet: {
       url: process.env.NETWORK_HOST_TELOS,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 40
     },
     baseMainnet: {
       url: process.env.NETWORK_HOST_BASE,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 8453
     },
     lineaMainnet: {
       url: process.env.NETWORK_HOST_LINEA,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 59144
     },
     mantleMainnet: {
       url: process.env.NETWORK_HOST_MANTLE,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 5000
     },
     cronosMainnet: {
       url: process.env.NETWORK_HOST_CRONOS,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 25
     },
     blastMainnet: {
       url: process.env.NETWORK_HOST_BLAST,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 81457
     },
     bahamutMainnet: {
       url: process.env.NETWORK_HOST_BAHAMUT,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 5165
     },
     rootstockMainnet: {
       url: process.env.NETWORK_HOST_ROOTSTOCK,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 30
     },
     taikoMainnet: {
       url: process.env.NETWORK_HOST_TAIKO,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 167000
     },
     modeMainnet: {
       url: process.env.NETWORK_HOST_MODE,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 34443
     },
     scrollMainnet: {
       url: process.env.NETWORK_HOST_SCROLL,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 534352,
       gasPrice: 150000000
     },
     kavaMainnet: {
       url: process.env.NETWORK_HOST_KAVA,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 2222
     },
     moonriverMainnet: {
       url: process.env.NETWORK_HOST_MOONRIVER,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 1285
     },
     wanchainMainnet: {
       url: process.env.NETWORK_HOST_WANCHAIN,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 888,
       gasPrice: 5000000000
     },
     mintMainnet: {
       url: process.env.NETWORK_HOST_MINT,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 185
     },
     bobMainnet: {
       url: process.env.NETWORK_HOST_BOB,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 60808
     },
     bitlayerMainnet: {
       url: process.env.NETWORK_HOST_BITLAYER,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 200901
     },
     bevmMainnet: {
       url: process.env.NETWORK_HOST_BEVM,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 11501
     },
     b2Mainnet: {
       url: process.env.NETWORK_HOST_B2,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 223
     },
     mantaMainnet: {
       url: process.env.NETWORK_HOST_MANTA,
-      accounts: [process.env.OWNER_PK_OMY_2, process.env.OWNER_PK_OMY],
+      accounts: [process.env.OWNER_PK_OMY, process.env.OWNER_PK_OMY_2],
       chainId: 169
     },
   },
