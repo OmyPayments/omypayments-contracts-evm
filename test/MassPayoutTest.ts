@@ -82,7 +82,7 @@ describe("MassPayout test", function () {
         const key = hexlify(randomBytes(32));
         const baseOwnerTokenAmount = await token.balanceOf(owner.address);
 
-        await expect(token.connect(owner).transfer(await payout.getAddress(), totalAmount)).to.not.rejected;
+        await expect(token.connect(owner).approve(await payout.getAddress(), totalAmount)).to.not.rejected;
         await expect(payout.connect(user1).metaPayouts(token, targets, amounts, key))
             .to.be.revertedWithCustomError(payout, 'CustomError')
             .withArgs(1001);
@@ -133,7 +133,7 @@ describe("MassPayout test", function () {
         }
 
         await expect(payout.connect(owner).addToken(await token.getAddress())).to.not.rejected;
-        await expect(token.connect(owner).transfer(await payout.getAddress(), totalAmount)).to.not.rejected;
+        await expect(token.connect(owner).approve(await payout.getAddress(), totalAmount)).to.not.rejected;
         await expect(payout.connect(owner).metaPayouts(token, targets, amounts, key))
             .to.emit(payout, 'MetaPayoutsEvent')
     });

@@ -88,7 +88,7 @@ contract MassPayoutV1 is UUPSUpgradeable, ReentrancyGuardUpgradeable, BaseWithdr
         }
 
         require(
-            _getTokenBalancePrivate(_token) >= totalAmount,
+            _token.allowance(msg.sender, address(this)) >= totalAmount,
             CustomError(BaseErrors.MASSPAYOUT__TOKENS_BALANCE_NOT_ENOUGH__ERROR)
         );
 
@@ -97,7 +97,7 @@ contract MassPayoutV1 is UUPSUpgradeable, ReentrancyGuardUpgradeable, BaseWithdr
         payouts[_key].targetsCount = _targets.length;
 
         for (uint i = 0; i < _targets.length; i++) {
-            _token.safeTransfer(_targets[i], _amounts[i]);
+            _token.safeTransferFrom(msg.sender, _targets[i], _amounts[i]);
         }
 
         emit MetaPayoutsEvent(totalAmount, _targets.length, _key);
