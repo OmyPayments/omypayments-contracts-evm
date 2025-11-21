@@ -368,7 +368,7 @@ export const Chains = {
             networkName: "tronMainnet",
             contractAddresses: {
                 massPayout: {
-                    address: 'TEjJKkQZytGVvMn4VnabdZH73rk3BwMzf7',
+                    address: 'TYK3o6qZktw5erv4s8ZkbiT4LEcJHMpUkJ',
                     tokensList: [
                         'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t', // USDT
                         'TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8', // USDC
